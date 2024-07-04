@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Package Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Regression Test(failed)">
+    <classes>
+      <class name="testNGbasics.DataDrivenFromDifferentClass">
+        <methods>
+          <include name="negativeSignInFunctionalityTest"/>
+          <include name="negativeSignInFunctionalityTestHittingEnterKey"/>
+          <include name="tearDown"/>
+          <include name="backToHomePage"/>
+          <include name="initialization"/>
+        </methods>
+      </class> <!-- testNGbasics.DataDrivenFromDifferentClass -->
+      <class name="testNGbasics.TestNGbasicCodes">
+        <methods>
+          <include name="handlingAlert"/>
+        </methods>
+      </class> <!-- testNGbasics.TestNGbasicCodes -->
+      <class name="testNGbasics.DataDriverTesting">
+        <methods>
+          <include name="tearDown"/>
+          <include name="positiveMenuLinkFunctionalityTest" invocation-numbers="0 1 2"/>
+          <include name="positiveSearchFunctionalityTest"/>
+          <include name="backToHomePage"/>
+          <include name="initialization"/>
+        </methods>
+      </class> <!-- testNGbasics.DataDriverTesting -->
+    </classes>
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [Package Suite] -->
